@@ -1,6 +1,6 @@
 # RuneKit
 
-[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/)
+Just hacking around to make it work on Ubuntu 20
 
 Alt1-compatible toolbox for RuneScape 3, for Linux and macOS.
 

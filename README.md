@@ -1,6 +1,6 @@
-# RuneKit
+Just hacking around to make it work on Ubuntu 20. Nothing official
 
-Just hacking around to make it work on Ubuntu 20
+# RuneKit
 
 Alt1-compatible toolbox for RuneScape 3, for Linux and macOS.
 

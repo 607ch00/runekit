@@ -62,7 +62,7 @@ class BrowserWindow(GameSnapMixin, QMainWindow):
     app: "App"
     browser: QWebEngineView
     page_class = PageClass
-    framed = False
+    framed = True
 
     def __init__(self, app: "App", **kwargs):
         super().__init__(**kwargs)

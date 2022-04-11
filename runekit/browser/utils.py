@@ -68,6 +68,9 @@ def image_to_stream(
     ignore_limit=False,
 ) -> bytes:
     if isinstance(image, np.ndarray):
+        #debug output captured image stream to disk
+        #img = Image.frombuffer('RGBA', (image.shape[1], image.shape[0]), image).save("/tmp/runekit/qtshot.bmp")
+
         out = np_crop(image, x, y, width, height)
         out = ensure_image(out, mode).tobytes()
     else:

@@ -25,21 +25,21 @@ dist/RuneKit.app.zip: dist/RuneKit.app
 
 # AppImage
 
-build/python3.9.12.AppImage:
+build/python3.9.15.AppImage:
 	mkdir build || true
-	wget https://github.com/niess/python-appimage/releases/download/python3.9/python3.9.12-cp39-cp39-manylinux1_x86_64.AppImage -O "$@"
+	wget https://github.com/niess/python-appimage/releases/download/python3.9/python3.9.15-cp39-cp39-manylinux1_x86_64.AppImage -O "$@"
 	chmod +x "$@"
 
-build/appdir: build/python3.9.12.AppImage
+build/appdir: build/python3.9.15.AppImage
 	$< --appimage-extract
 	mv squashfs-root build/appdir
 
 dist/RuneKit.AppImage: dist/runekit.tar.gz build/appdir deploy/runekit-appimage.sh
 	build/appdir/usr/bin/python3 -m pip install dist/runekit.tar.gz
 	rm $(wildcard build/appdir/*.desktop) $(wildcard build/appdir/usr/share/applications/*.desktop) $(wildcard build/appdir/usr/share/metainfo/*)
-	cp deploy/RuneKit.desktop build/appdir/
-	cp deploy/RuneKit.desktop build/appdir/usr/share/applications/
-	cp deploy/RuneKit.appdata.xml build/appdir/usr/share/metainfo/
+	cp deploy/runekit.desktop build/appdir/
+	cp deploy/runekit.desktop build/appdir/usr/share/applications/
+	cp deploy/com._607ch00.runekit.appdata.xml build/appdir/usr/share/metainfo/
 	cp deploy/runekit-appimage.sh build/appdir/AppRun
 	$(LINUXDEPLOY) --appdir build/appdir --output appimage
 	cp RuneKit-*.AppImage "$@"

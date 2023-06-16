@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>com._607ch00.runekit</id>
+    <metadata_license>MIT</metadata_license>
+    <project_license>GPL-3.0</project_license>
+    <name>runekit</name>
+    <summary>Alt1-compatible toolbox for RuneScape 3</summary>
+    <description>
+        <p>Alt1-compatible toolbox for RuneScape 3. Alt1-compatible toolbox for RuneScape 3. Alt1-compatible toolbox for RuneScape 3</p>
+    </description>
+    <launchable type="desktop-id">runekit.desktop</launchable>
+    <url type="homepage">https://github.com/607ch00/runekit</url>
+    <provides>
+        <id>runekit.desktop</id>
+    </provides>
+</component>

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Exec=gnome-terminal -e '/home/me/repos/0607ch00/runekit/runekit.sh'
+Name=RuneKit
+Icon=/home/me/repos/0607ch00/runekit/runekit/ui/trayicon.png
